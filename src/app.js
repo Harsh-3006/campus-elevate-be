@@ -32,6 +32,10 @@ app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'dist','index.html'))
 })
 
+app.get('/test',(req,res)=>{
+    res.json("test completed")
+})
+
 app.use('/auth',userRoutes)
 app.use('/user',resouresroutes)
 app.use('/event',eventRoutes)
