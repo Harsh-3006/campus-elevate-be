@@ -1,9 +1,9 @@
+require('dotenv').config({path:'../.env'})
 const express=require('express')
 // const User=require('../module/userSchema.js')
 const conn=require('../conn.js')
 const cors=require('cors')
 const path = require('path')
-
 const userRoutes=require('./routes/userRoutes.js')
 const resouresroutes=require('./routes/ResourcesRoutes.js')
 const eventRoutes=require('./routes/eventsRoutes.js')
